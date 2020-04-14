@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: arial, sans-serif;
+                font-size: small;
+                text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: o;
+            }
+            li {
+                float: left;
+            }
+            a {
+                display: inline;
+                padding: 15px;
+                color: black;
+                opacity: 0.75;
+                text-decoration: none;
+            }
+            .logo {
+                padding: 60px 0 20px 0;
+            }
+            .search {
+                background: #fff;
+                display: flex;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+                width: 482px;
+                font-size: small;
+            }
+            .buttons {
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                color: #5F6368;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .message {
+                color: blue;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+        </style>
         <title>Google</title>
     </head>
     <body>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png?safari_group=9"><br>
-        <form>
-            <input type="text"><br>
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky"
-        </form><br>
-        <a href="#">To everyone helping, thank you</a>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+            </ul>
+        </nav><br>
+        <center>
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png?safari_group=9"><br>
+            <form>
+                <input class="search" type="text"><br>
+                <input class="buttons" type="submit" value="Google Search">
+                <input class="buttons" type="submit" value="I'm Feeling Lucky">
+            </center>
+            </form><br>
+        <a class="message" href="#">To everyone helping, thank you</a>
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
